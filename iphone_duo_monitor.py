@@ -47,8 +47,8 @@ ALERT_ONLINE = False
 
 CHECK_EVERY_SECONDS = 180  # 唔好太密，避免俾 Apple 封
 # Telegram：可以直接填喺度，或者用環境變數 TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID
-TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
-TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
+TELEGRAM_BOT_TOKEN = os.environ.get("8981292385:AAFa8kthHh_qdNZkVH2jBhorM1KCMw1aKl8", "")
+TELEGRAM_CHAT_ID = os.environ.get("1818430554", "")
 WINDOWS_TOAST = sys.platform == "win32"
 # ================
 
