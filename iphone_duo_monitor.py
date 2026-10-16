@@ -45,7 +45,7 @@ PICKUP_STORES = []  # 例如 ["Causeway Bay", "ifc mall", "Festival Walk"]
 # 網上落單（送貨）有貨都通知？False = 只係網上落單可以揀門市自取先通知
 ALERT_ONLINE = False
 
-CHECK_EVERY_SECONDS = 180  # 唔好太密，避免俾 Apple 封
+CHECK_EVERY_SECONDS = 60  # 唔好太密，避免俾 Apple 封
 # Telegram：可以直接填喺度，或者用環境變數 TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID
 TELEGRAM_BOT_TOKEN = os.environ.get("8981292385:AAFa8kthHh_qdNZkVH2jBhorM1KCMw1aKl8", "")
 TELEGRAM_CHAT_ID = os.environ.get("1818430554", "")
