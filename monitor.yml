@@ -2,8 +2,8 @@ name: iPhone Duo monitor
 
 on:
   schedule:
-    - cron: "*/5 * * * *"  # 每 5 分鐘（GitHub 最密只可以 5 分鐘，繁忙時可能遲幾分鐘）
-  workflow_dispatch:  # 可以喺 Actions 頁面手動撳 "Run workflow"
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
 
 concurrency:
   group: duo-monitor
@@ -27,7 +27,6 @@ jobs:
           pip install -r requirements.txt
           python -m playwright install --with-deps chromium
 
-      # 記住上次狀態，咁先知「由無貨變有貨」，唔會重複通知
       - name: Restore last state
         uses: actions/cache/restore@v4
         with:
